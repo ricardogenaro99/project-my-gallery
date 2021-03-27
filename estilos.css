@@ -118,7 +118,6 @@ header .categorias a.activo{
 
 .overlay img{
 	max-width: 100%;
-
 }
 
 .overlay .descripcion{
@@ -220,9 +219,20 @@ footer .creado-por p span{
 	}
 }
 
+@media screen and (max-width: 466px){
+	.overlay #btn-cerrar-popup{
+		right: 5px;
+		top: -30px;
+	}
+}
+
 @media screen and (max-width: 425px){
 	footer .redes-sociales a{
 		margin: 10px;
+	}
+
+	.overlay{
+		padding: 0 20px;
 	}
 }
 
