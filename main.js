@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 	});
 	document.querySelector("#barra-busqueda").addEventListener('input', (event) => {
 		const busqueda = event.target.value;
-		grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda.trim()));
+		grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda.trim().toLowerCase()));
 	});
 	const overlay = document.getElementById("overlay");
 	document.querySelectorAll(".grid .item img").forEach((elemento) => {
